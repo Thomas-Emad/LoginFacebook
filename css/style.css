@@ -1,0 +1,243 @@
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    box-sizing: border-box;
+}
+        /* center */
+.center {
+    width: 100%;
+
+}
+
+         /* Title-right */
+.img,
+.text-right {
+    text-align: right;
+    margin-right: 5%;
+}
+
+img {
+    margin-top: 16.5%;
+    width: 28%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 3%;
+}
+
+.text-right {
+    margin-top: 26%;
+    font-size: 1.6rem;
+    direction: rtl;
+    color: #1c1e21;
+}
+
+         /* End Title-right */
+
+        /* Box-Login */
+.login-left {
+    width: 38%;
+    position: absolute;
+    top: 21%;
+    background-color: #FFF;
+    text-align: center;
+    margin-left: 3%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6.5px 2px rgb(102 102 102 / 10%);
+}
+
+.login-left input {
+    width: 85%;
+    margin: 15px 7px 0px;
+    padding: 15px;
+    direction: rtl;
+    font-size: 17px;
+    outline: none;
+    border: solid 1px #dddfe2;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.login-left input[type="submit"] {
+    margin-bottom: 15px;
+    background-color: #1877f2;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 93%;
+    color: #FFF;
+    padding: 12px; 
+}
+
+.login-left .link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #1877f2;
+    margin-bottom: 30px;
+}
+
+.login-left hr {
+    width: 90%;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 17.5px;
+}
+
+.login-left input[type="submit"].new-log {
+    width: 35%;
+    margin-bottom: 25px;
+    background-color: #42b72a;
+    font-size: 20px;
+}
+        /* hover and focue */
+.login-left input[type="email"]:focus,
+input[type="password"]:focus {
+    border: solid 1px #1877f2;
+    box-shadow: 0 0 2px 0 #1877f2;
+    color: #000;
+}
+
+.login-left input[type="submit"]:hover {
+    background-color: #166fe5;
+    transition: 0.4s ease-out;
+}
+
+.login-left .link:hover {
+    text-decoration: revert
+}
+
+.login-left input[type="submit"].new-log:hover {
+    background-color: #36a420;
+    transition: 0.4s ease-out;
+}
+            /* End Hover and focus */
+            
+            /* text-bottom */
+.text-bottom {
+    bottom: -19%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    direction: rtl;
+}
+
+.text-bottom a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.text-bottom a:hover {
+    text-decoration: revert;
+}
+        /* End box-login */
+
+        /* bottom */
+                /* top */
+.bottom {
+    width: 100%;
+    background-color: #FFF;
+    text-align: right;
+    position: absolute;
+    bottom: -20%;
+}
+.bottom a {
+    color: #8a8d91;
+    text-decoration: none;
+    margin: 35px 0 10px 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Cairo', sans-serif;
+    line-height: 0.5;
+}
+
+.bottom .ar,
+.bottom-bottom .new,
+.bottom-bottom .ins,
+.bottom-bottom .ad,
+.bottom-bottom .end {
+    margin-right: 45px;
+}
+
+.bottom .ar:hover {
+    text-decoration: none;
+}
+
+.bottom button {
+    color: rgb(87, 87, 87);
+    width: 33px;
+    background-color: #f9f9f9;
+    outline: none;
+    border: solid 0.1px #b7b7b7;
+    height: 20px;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+
+.bottom button:hover {
+    background-color: #bcc0c767;
+}
+
+.bottom hr {
+    width: 90%;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.bottom a:hover {
+    text-decoration: revert;
+}
+            /* End top */
+            /* bottom */
+.bottom-bottom a {
+    margin: 8px;
+}
+
+.end  {
+    font-size: 12px;
+    color: #737373;
+    font-family: 'Cairo', sans-serif;
+}
+            /* End bottom-bottom */
+        /* End bottom */
+                                    /* End [facebook.com] */
+                                    
+@media (max-width: 767px) {
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .center .right {
+    text-align: center;
+  }
+  img {
+    margin-top: 0;
+    width: 40%;
+    position: relative;
+  }
+  .img, .text-right{
+    margin-top:0;
+    margin-right:0;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .login-left {
+    top: 100%;
+    width: 90%;
+  }
+  .login-left input[type="submit"].new-log {
+    font-size: 15px;
+  }
+  .bottom {
+    bottom: -40%;
+  }
+}
