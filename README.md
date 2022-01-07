@@ -1,2 +1,2 @@
 # Response
-[url:https://tom-website.github.io/LoginFacebook/]
+(https://tom-website.github.io/LoginFacebook/)
